@@ -1,5 +1,4 @@
 import "./styles.css"
-import restaurantImg from "/assets/restaurant.jpeg"
 import { createHomePage } from "./home.js"
 import { createMenuPage } from "./menu.js"
 import { createContactPage } from "./contact.js"
@@ -9,7 +8,7 @@ function handleBtnClick(event){
     const content = document.getElementById('content');
     content.innerHTML = "";
     if (buttonId === "home") {
-        createHomePage(restaurantImg);
+        createHomePage();
     } else if (buttonId === "menu") {
         createMenuPage();
     } else if (buttonId === "contact") {
@@ -23,7 +22,7 @@ buttons.forEach(btn =>{
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    createHomePage(restaurantImg);
+    createHomePage();
 });
 
 
