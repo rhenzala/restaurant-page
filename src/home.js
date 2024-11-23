@@ -1,18 +1,19 @@
-export function createHomePage(restaurantImg){
+import restaurantImg from "/assets/restaurant.jpeg"
+export function createHomePage(){
     const content = document.getElementById('content');
-
 
     const heading = document.createElement('div');
     const headingTitle = document.createElement('h1');
     const headingSubtitle = document.createElement('p');
+    const image = document.createElement('img');
     heading.classList.add('content-heading');
     headingTitle.textContent = "Rest-2-Rant";
     headingSubtitle.textContent = "Your go to one-stop Eat N' Yap";
+    image.src = restaurantImg;
+    image.alt = "Image of Chef Welcoming the Customers";
     heading.appendChild(headingTitle)
     heading.appendChild(headingSubtitle);
-    
-    const image = document.createElement('img');
-    image.src = restaurantImg;
+    heading.appendChild(image);
     
     const opens = document.createElement('div');
     const openHrs = document.createElement('h1');
@@ -46,7 +47,6 @@ export function createHomePage(restaurantImg){
     address.textContent = "1234 Some Street, Anyplace, Somewhere";
     location.appendChild(loc);
     location.appendChild(address);
-    
     
     content.appendChild(heading);
     content.appendChild(image);
