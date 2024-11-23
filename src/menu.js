@@ -34,7 +34,20 @@ export function createMenuPage(){
     menu2.appendChild(description2);
     menu2.appendChild(price2);
 
+    const menu3 = document.createElement('div');
+    const dishName3 = document.createElement('h2');
+    const description3 = document.createElement('p');
+    const price3 = document.createElement('p');
+    menu3.classList.add('menu', 'content-section');
+    dishName3.textContent = "Menu 3";
+    description3.textContent = "Lorem ipsum odor amet, consectetuer adipiscing elit.";
+    price3.textContent = "$2.49";
+    menu3.appendChild(dishName3);
+    menu3.appendChild(description3);
+    menu3.appendChild(price3);
+
     content.appendChild(heading);
     content.appendChild(menu1);
     content.appendChild(menu2);
+    content.appendChild(menu3);
 }
