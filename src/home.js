@@ -5,15 +5,16 @@ export function createHomePage(){
     const heading = document.createElement('div');
     const headingTitle = document.createElement('h1');
     const headingSubtitle = document.createElement('p');
-    const image = document.createElement('img');
+    const homeImg = document.createElement('img');
     heading.classList.add('content-heading');
     headingTitle.textContent = "Rest-2-Rant";
     headingSubtitle.textContent = "Your go to one-stop Eat N' Yap";
-    image.src = restaurantImg;
-    image.alt = "Image of Chef Welcoming the Customers";
+    homeImg.src = restaurantImg;
+    homeImg.alt = "Image of Chef Welcoming the Customers";
+    homeImg.classList.add('homepage-image');
     heading.appendChild(headingTitle)
     heading.appendChild(headingSubtitle);
-    heading.appendChild(image);
+    heading.appendChild(homeImg);
     
     const opens = document.createElement('div');
     const openHrs = document.createElement('h1');
@@ -49,7 +50,6 @@ export function createHomePage(){
     location.appendChild(address);
     
     content.appendChild(heading);
-    content.appendChild(image);
     content.appendChild(opens);
     content.appendChild(location);
 }
