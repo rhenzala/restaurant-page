@@ -1,6 +1,8 @@
 import "./styles.css"
 import restaurantImg from "/assets/restaurant.jpeg"
 import { createHomePage } from "./home.js"
+import { createMenuPage } from "./menu.js"
+import { createContactPage } from "./contact.js"
 
 function handleBtnClick(event){
     const buttonId = event.target.id; 
@@ -9,9 +11,9 @@ function handleBtnClick(event){
     if (buttonId === "home") {
         createHomePage(restaurantImg);
     } else if (buttonId === "menu") {
-        console.log("Menu page logic here"); 
+        createMenuPage();
     } else if (buttonId === "contact") {
-        console.log("Contact page logic here"); 
+        createContactPage();
     }
 }
 
@@ -20,7 +22,9 @@ buttons.forEach(btn =>{
     btn.addEventListener('click', handleBtnClick)
 });
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    createHomePage(restaurantImg);
+});
 
 
 
