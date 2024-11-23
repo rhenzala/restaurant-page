@@ -5,7 +5,7 @@ export function createHomePage(restaurantImg){
     const heading = document.createElement('div');
     const headingTitle = document.createElement('h1');
     const headingSubtitle = document.createElement('p');
-    heading.classList.add('heading-content');
+    heading.classList.add('content-heading');
     headingTitle.textContent = "Rest-2-Rant";
     headingSubtitle.textContent = "Your go to one-stop Eat N' Yap";
     heading.appendChild(headingTitle)
@@ -26,7 +26,7 @@ export function createHomePage(restaurantImg){
         "Saturday: 10 am - 6 pm",
         "Sunday: 10 am - 4 pm"
     ];
-    opens.classList.add('open');
+    opens.classList.add('open','content-section');
     schedule.classList.add('schedule');
     openHrs.textContent = "Open Hours";
     
@@ -41,7 +41,7 @@ export function createHomePage(restaurantImg){
     const location = document.createElement('div');
     const loc = document.createElement('h1');
     const address = document.createElement('p');
-    location.classList.add('location');
+    location.classList.add('location', 'content-section');
     loc.textContent = "Location";
     address.textContent = "1234 Some Street, Anyplace, Somewhere";
     location.appendChild(loc);

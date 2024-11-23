@@ -4,7 +4,7 @@ export function createContactPage(){
     const heading = document.createElement('div');
     const headingTitle = document.createElement('h1');
     const headingSubtitle = document.createElement('p');
-    heading.classList.add('heading-content');
+    heading.classList.add('content-heading');
     headingTitle.textContent = "CONTACT";
     headingSubtitle.textContent = "For inquiries, message us!";
     heading.appendChild(headingTitle)
@@ -14,7 +14,7 @@ export function createContactPage(){
     const contactDetails = document.createElement('h2');
     const email = document.createElement('p');
     const phone = document.createElement('p');
-    contact.classList.add('contact');
+    contact.classList.add('contact', 'content-section');
     contactDetails.textContent ="Contact Details";
     email.textContent = "E-Mail: rest2rant@email.com";
     phone.textContent = "Phone: 123 456 789";

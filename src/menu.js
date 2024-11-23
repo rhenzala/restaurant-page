@@ -4,7 +4,7 @@ export function createMenuPage(){
     const heading = document.createElement('div');
     const headingTitle = document.createElement('h1');
     const headingSubtitle = document.createElement('p');
-    heading.classList.add('heading-content');
+    heading.classList.add('content-heading');
     headingTitle.textContent = "MENU";
     headingSubtitle.textContent = "The Rest-2-Rant Specialty";
     heading.appendChild(headingTitle)
@@ -14,7 +14,7 @@ export function createMenuPage(){
     const dishName1 = document.createElement('h2');
     const description1 = document.createElement('p');
     const price1 = document.createElement('p');
-    menu1.classList.add('menu');
+    menu1.classList.add('menu', 'content-section');
     dishName1.textContent = "Menu 1";
     description1.textContent = "Lorem ipsum odor amet, consectetuer adipiscing elit.";
     price1.textContent = "$2.99";
@@ -26,7 +26,7 @@ export function createMenuPage(){
     const dishName2 = document.createElement('h2');
     const description2 = document.createElement('p');
     const price2 = document.createElement('p');
-    menu2.classList.add('menu');
+    menu2.classList.add('menu', 'content-section');
     dishName2.textContent = "Menu 2";
     description2.textContent = "Lorem ipsum odor amet, consectetuer adipiscing elit.";
     price2.textContent = "$3.99";
