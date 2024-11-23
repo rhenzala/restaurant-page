@@ -6,7 +6,7 @@ import { createContactPage } from "./contact.js"
 function handleBtnClick(event){
     const buttonId = event.target.id; 
     const content = document.getElementById('content');
-    content.innerHTML = "";
+    content.replaceChildren();
     if (buttonId === "home") {
         createHomePage();
     } else if (buttonId === "menu") {
